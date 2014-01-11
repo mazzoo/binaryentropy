@@ -1,0 +1,36 @@
+
+binaryentropy
+~~~~~~~~~~~~~
+
+dumps a graph of entropy of a BLOB
+
+
+usage
+~~~~~
+
+  usage:
+          binaryentropy image
+
+          dumps the entropy of image
+          the output is created by sweeping a 256-byte sliding window over image
+          and may be used by e.g. gnuplot to visualize
+
+          e.g.:
+                  $ binaryentropy image > entropy_of_image.gnuplot
+                  $ gnuplot
+                  gnuplot> plot "entropy_of_image.gnuplot"
+
+          or in one line, you may
+                  $ IMAGE=/bin/ls make plot
+
+
+authors
+~~~~~~~
+
+mazzoo - binarytools /at/ mazzoo [dot] de
+
+
+license
+~~~~~~~
+
+GPLv3, see file LICENSE
